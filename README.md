@@ -1,20 +1,39 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 平哥的疯狂8点 (Crazy Eights)
 
-# Run and deploy your AI Studio app
+一个精致且互动的疯狂8点纸牌游戏，基于 React, Tailwind CSS 和 Motion 构建。
 
-This contains everything you need to run your app locally.
+## 🚀 部署指南 (Vercel)
 
-View your app in AI Studio: https://ai.studio/apps/bd352bde-fe3b-4e4f-98a3-84d6b79d1bb5
+### 1. 同步到 GitHub
+1. 在 GitHub 上创建一个新的仓库（例如：`crazy-eights`）。
+2. 在本地终端中运行以下命令：
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/你的用户名/crazy-eights.git
+   git push -u origin main
+   ```
 
-## Run Locally
+### 2. 部署到 Vercel
+1. 登录 [Vercel](https://vercel.com/)。
+2. 点击 **"Add New"** -> **"Project"**。
+3. 导入您刚刚创建的 GitHub 仓库。
+4. 在 **"Environment Variables"** 中添加：
+   - `GEMINI_API_KEY`: 您的 Google AI Studio API 密钥（如果后续需要 AI 功能）。
+5. 点击 **"Deploy"**。
 
-**Prerequisites:**  Node.js
+## 🛠️ 技术栈
+- **Frontend**: React 19, Vite
+- **Styling**: Tailwind CSS
+- **Animation**: Motion (Framer Motion)
+- **Icons**: Lucide React
 
+## 🎮 游戏规则
+- 匹配顶牌的 **花色** 或 **点数**。
+- **8是万能牌**：随时可以打出并指定新的花色。
+- 最先清空手牌的玩家获胜！
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📄 许可证
+Apache-2.0
